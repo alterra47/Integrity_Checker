@@ -10,7 +10,8 @@ IntegrityChecker is a full-stack security tool designed to demonstrate high-perf
 * **IPC Protocol:** JSON over TCP Sockets (Localhost:8080)
 
 ## 2. Directory Structure
-```text
+
+```
 /
 ├── cpp_service/      # The C++ High-Performance Worker
 │   ├── src/          # Source code (Server, Hasher, SHA256)
@@ -19,8 +20,9 @@ IntegrityChecker is a full-stack security tool designed to demonstrate high-perf
 │   ├── static/       # Frontend Assets
 │   └── main.py       # FastAPI Application
 └── docs/             # Design Documents
+```
 
-## 🛠 Build & Run Instructions
+## 3. Build & Run Instructions
 
 ### Prerequisites
 Ensure you have the following installed on your system:
