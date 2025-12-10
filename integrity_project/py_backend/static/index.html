@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrity | Secure File Hashing</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>INTEGRITY<span class="highlight">.CHECKER</span></h1>
+            <p>Secure C++ Powered Hashing Engine</p>
+        </header>
+
+        <div class="upload-zone" id="drop-zone">
+            <input type="file" id="file-input" hidden>
+            <div class="icon">📁</div>
+            <p>Drag & Drop your file here</p>
+            <button onclick="document.getElementById('file-input').click()">Browse Files</button>
+        </div>
+
+        <div class="status-panel" id="status-panel" style="display: none;">
+            <div class="loader" id="loader"></div>
+            <div class="result" id="result">
+                <p class="label">FILE INTEGRITY SIGNATURE:</p>
+                <code id="hash-output">Loading...</code>
+                <p class="meta" id="meta-info"></p>
+            </div>
+        </div>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+</html>
